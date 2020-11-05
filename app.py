@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request, make_response
 from flask_mysqldb import MySQL
 from flask_cors import CORS
 
@@ -18,7 +18,7 @@ mysql = MySQL(app)
 @app.route('/departments/', methods=["GET"])
 def get_departments():
 
-    output = [{
+    data = ({
         "city": "New York City, New York",
         "image": "./static/img/departments/newyorkcityny.jpg",
         "policeFemale": 19,
@@ -71,13 +71,17 @@ def get_departments():
         "communityAsian": 13.9,
         "communitySource": "https://app.powerbigov.us/view?r=eyJrIjoiZTI4OTRjZTYtNTYwOC00NzcxLThhYTItOTU5NGNkMzIzYjVlIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9&pageName=ReportSection",
         "communitySourceLastUpdated": "20201026",
-    }]
+    })
 
-    response = jsonify(response=output)
+    response = make_response(jsonify(response=data))
 
     # Enable Access-Control-Allow-Origin
-    response.headers.add("Access-Control-Allow-Origin", "*")
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.mimetype = 'application/json'
 
+
+    print("Call to /departments:", response.status_code, '\n')
+    print("Response is:", response.status_code)
     return response
 
 
@@ -93,6 +97,18 @@ def get_departments():
 #     # f.write("]")
 
 #     return str(rv)
+
+
+with app.test_client() as client:
+    response = client.get('/departments')
+    print(response.get_data())
+    print(response)
+
+    # the contexts are not popped even though the request ended
+    print(request.url)
+    print(request.host)
+    print(request.path)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
