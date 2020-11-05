@@ -15,10 +15,15 @@ app.config['MYSQL_DB'] = 'officers'
 mysql = MySQL(app)
 
 
-@app.route('/department/newyorkcityny', methods=["GET"])
+@app.route('/departments/', methods=["GET"])
 def get_departments():
 
-    output = {
+    output = [{
+        "city": "New York City, New York",
+        "image": "./static/img/departments/newyorkcityny.jpg",
+        "policeFemale": 19,
+        "policeMale": 81,
+        "genderSource": "https://www1.nyc.gov/site/ccrb/policy/<br />data-transparency-initiative-mos.page",
         "racialParityIndex": 0.0,
         "whiteParityIndex": 0.0,
         "nativeAmericanParityIndex": 0.0,
@@ -39,7 +44,34 @@ def get_departments():
         "communityAsian": 13.9,
         "communitySource": "https://app.powerbigov.us/view?r=eyJrIjoiZTI4OTRjZTYtNTYwOC00NzcxLThhYTItOTU5NGNkMzIzYjVlIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9&pageName=ReportSection",
         "communitySourceLastUpdated": "20201026",
-    }
+    },
+    {
+        "city": "Chicago, Illinois",
+        "image": "./static/img/departments/chicagoil.jpg",
+        "genderSource": "https://home.chicagopolice.org/wp-content/uploads/2019/03/Chicago-Police-Department-Annual-Report-2017.pdf",
+        "policeFemale": 22.38,
+        "policeMale": 77.62,
+        "racialParityIndex": 0.0,
+        "whiteParityIndex": 0.0,
+        "nativeAmericanParityIndex": 0.0,
+        "blackParityIndex": 0.0,
+        "hispanicParityIndex": 0.0,
+        "asianParityIndex": 0.0,
+        "policeWhite": 50.1,
+        "policeNativeAmerican": 0.31,
+        "policeBlack": 20.93,
+        "policeHispanic": 24.93,
+        "policeAsian": 3.11,
+        "policeSource": "https://app.powerbigov.us/view?r=eyJrIjoiZTI4OTRjZTYtNTYwOC00NzcxLThhYTItOTU5NGNkMzIzYjVlIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9&pageName=ReportSection",
+        "policeSourceLastUpdated": "20201026",
+        "communityWhite": 32.1,
+        "communityNativeAmerican": 0.4,
+        "communityBlack": 24.3,
+        "communityHispanic": 29.1,
+        "communityAsian": 13.9,
+        "communitySource": "https://app.powerbigov.us/view?r=eyJrIjoiZTI4OTRjZTYtNTYwOC00NzcxLThhYTItOTU5NGNkMzIzYjVlIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9&pageName=ReportSection",
+        "communitySourceLastUpdated": "20201026",
+    }]
 
     response = jsonify(response=output)
 
