@@ -15,7 +15,7 @@ app.config['MYSQL_DB'] = 'officers'
 mysql = MySQL(app)
 
 
-@app.route('/departments/', methods=["GET"])
+@app.route('/departments/overview', methods=["GET"])
 def get_departments():
 
     data = ({
@@ -98,30 +98,15 @@ def get_departments():
     print("Response is:", response.status_code)
     return response
 
+@app.route('/departments/', methods=["GET"])
+def get_departments():
 
-# @app.route('/officers')
-# def get_officers():
-#     cur = mysql.connection.cursor()
-#     cur.execute('''SELECT first_name, last_name, mid_initial, locality FROM nycnyofficers''')
-#     rv = cur.fetchall()
-
-#     # f.write("[")
-#     # output += json.dumps(officer.__dict__) + ","
-#     # f.write(output[:-1])
-#     # f.write("]")
-
-#     return str(rv)
-
-
-with app.test_client() as client:
-    response = client.get('/departments')
-    print(response.get_data())
-    print(response)
-
-    # the contexts are not popped even though the request ended
-    print(request.url)
-    print(request.host)
-    print(request.path)
+    # response = make_response(jsonify(response=data))
+    #
+    # # Enable Access-Control-Allow-Origin
+    # response.headers['Access-Control-Allow-Origin'] = '*'
+    # response.mimetype = 'application/json'
+    # return response
 
 
 if __name__ == '__main__':
