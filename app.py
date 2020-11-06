@@ -15,13 +15,14 @@ app.config['MYSQL_DB'] = 'officers'
 mysql = MySQL(app)
 
 
-@app.route('/departments/overview', methods=["GET"])
+@app.route('/departments/', methods=["GET"])
 def get_departments():
 
     data = ({
         "city": "New York City",
         "state": "New York",
         "departmentAcronymn": "NYPD",
+        "yearFounded": 1845,
         "departmentCommissioner": "Dermot F. Shea",
         "departmentUrl": "https://www1.nyc.gov/site/nypd/index.page",
         "departmentTwitterUrl": "https://twitter.com/NYPDnews",
@@ -56,6 +57,7 @@ def get_departments():
         "city": "Chicago",
         "state": "Illinois",
         "departmentAcronymn": "CPD",
+        "yearFounded": 1835,
         "departmentCommissioner": "David Brown",
         "departmentUrl": "https://home.chicagopolice.org/",
         "departmentTwitterUrl": "https://twitter.com/Chicago_Police",
@@ -98,9 +100,9 @@ def get_departments():
     print("Response is:", response.status_code)
     return response
 
-@app.route('/departments/', methods=["GET"])
-def get_departments():
-
+@app.route('/departments/overview', methods=["GET"])
+def get_departments_overview():
+    pass
     # response = make_response(jsonify(response=data))
     #
     # # Enable Access-Control-Allow-Origin

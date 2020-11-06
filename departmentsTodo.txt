@@ -1,0 +1,63 @@
+The goal will be to include the following fifty departments.
+Thereafter, departments may be added by request from site users.
+
+Rank	Police Department		Full-Time Sworn In Officers
+1	New York (NY) Police		36,008              IP
+2	Chicago (IL) Police		11,965                  IP
+3	Los Angeles (CA) Police		9,870               Is this possible? Officer data was anonymized
+4	Philadelphia (PA) Police		6,031           Source: https://data.phila.gov/visualizations/employee-salaries
+5	Houston (TX) Police		5,203
+6	Washington (DC) Metropolitan Police		3,712   https://dchr.dc.gov/page/about-dchr DC Department of Human Resources
+7	Dallas (TX) Police		3,408
+8	Miami-Dade (FL) Police		2,723
+9	Phoenix (AZ) Police		2,689
+10	Las Vegas (NV) Metropolitan Police		2,566
+11	Baltimore (MD) Police		2,524
+12	Nassau County (NY) Police		2,462
+13	Suffolk County (NY) Police		2,385
+14	San Francisco (CA) Police		2,356
+15	Detroit (MI) Police		2,250
+16	San Antonio (TX) Police		2,244
+17	Boston (MA) Police		2,099
+18	Memphis (TN) Police		2,012
+19	Honolulu (HI) Police		1,962
+20	Milwaukee (WI) Police		1,879
+21	Baltimore County (MD) Police		1,869
+22	San Diego (CA) Police		1,857
+23	Columbus (OH) Police		1,838
+24	Austin (TX) Police		1,807
+25	Charlotte-Mecklenburg (NC) Police		1,743
+26	Atlanta (GA) Police		1,730
+27	Prince George’s County (MD) Police		1,650
+28	Fort Worth (TX) Police		1,541
+29	Cleveland (OH) Police		1,475
+30	Denver (CO) Police		1,464
+31	Metropolitan Nashville (TN) Police		1,403
+32	Seattle (WA) Police		1,373
+33	Fairfax County (VA) Police		1,369
+34	Kansas City (MO) Police		1,364
+35	Louisville (KY) Metro Police		1,246
+36	Montgomery County (MD) Police		1,230
+37	St. Louis (MO) Police		1,175
+38	Oklahoma City (OK) Police		1,101
+39	Cincinnati (OH) Police		1,032
+40	El Paso (TX) Police		1,026
+41	Newark (NJ) Police		955
+42	Tampa (FL) Police		950
+43	San Jose (CA) Police		927
+44	Pittsburgh (PA) Police		892
+45	Portland (OR) Police		881
+46	Tucson (AZ) Police		876
+47	Jersey City (NJ) Police		854
+48	Omaha (NE) Police		848
+49	Minneapolis (MN) Police		841
+50	Birmingham (AL) Police		830
+
+www.worldatlas.com/articles/the-largest-police-departments-in-the-us.html
+
+In total, there are 17,985 local and state law enforcement agencies in the United States that employ at least one permanent officer that is sworn in.
+
+12,501 are local police departments
+1,733 are special jurisdiction offices
+3,063 are sheriff’s offices
+638 are other types of agencies.
