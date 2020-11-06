@@ -19,7 +19,14 @@ mysql = MySQL(app)
 def get_departments():
 
     data = ({
-        "city": "New York City, New York",
+        "city": "New York City",
+        "state": "New York",
+        "departmentAcronymn": "NYPD",
+        "departmentCommissioner": "Dermot F. Shea",
+        "departmentUrl": "https://www1.nyc.gov/site/nypd/index.page",
+        "departmentTwitterUrl": "https://twitter.com/NYPDnews",
+        "commissionerYearStarted": 2019,
+        "cityPopulation": 8398748,
         "image": "./static/img/departments/newyorkcityny.jpg",
         "policeFemale": 19,
         "policeMale": 81,
@@ -46,7 +53,14 @@ def get_departments():
         "communitySourceLastUpdated": "20201026",
     },
     {
-        "city": "Chicago, Illinois",
+        "city": "Chicago",
+        "state": "Illinois",
+        "departmentAcronymn": "CPD",
+        "departmentCommissioner": "David Brown",
+        "departmentUrl": "https://home.chicagopolice.org/",
+        "departmentTwitterUrl": "https://twitter.com/Chicago_Police",
+        "commissionerYearStarted": 2020,
+        "cityPopulation": 2705994,
         "image": "./static/img/departments/chicagoil.jpg",
         "genderSource": "https://home.chicagopolice.org/wp-content/uploads/2019/03/Chicago-Police-Department-Annual-Report-2017.pdf",
         "policeFemale": 22.38,
