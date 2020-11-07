@@ -19,6 +19,7 @@ mysql = MySQL(app)
 def get_departments():
 
     data = ({
+        "address": "1 Police Plaza",
         "city": "New York City",
         "state": "New York",
         "departmentAcronymn": "NYPD",
@@ -26,6 +27,7 @@ def get_departments():
         "departmentCommissioner": "Dermot F. Shea",
         "departmentUrl": "https://www1.nyc.gov/site/nypd/index.page",
         "departmentTwitterUrl": "https://twitter.com/NYPDnews",
+        "departmentTwitterHandle": "NYPDnews",
         "commissionerYearStarted": 2019,
         "cityPopulation": 8398748,
         "image": "./static/img/departments/newyorkcityny.jpg",
@@ -54,6 +56,7 @@ def get_departments():
         "communitySourceLastUpdated": "20201026",
     },
     {
+        "address": "3510 S. Michigan Ave",
         "city": "Chicago",
         "state": "Illinois",
         "departmentAcronymn": "CPD",
@@ -61,6 +64,7 @@ def get_departments():
         "departmentCommissioner": "David Brown",
         "departmentUrl": "https://home.chicagopolice.org/",
         "departmentTwitterUrl": "https://twitter.com/Chicago_Police",
+        "departmentTwitterHandle": "Chicago_Police",
         "commissionerYearStarted": 2020,
         "cityPopulation": 2705994,
         "image": "./static/img/departments/chicagoil.jpg",
